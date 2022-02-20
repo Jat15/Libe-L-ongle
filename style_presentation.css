@@ -6,7 +6,6 @@
 }
 
 body {
-    height: 100%;
     width: 100%;
     background-color: #ffc8c8;
 }
@@ -107,7 +106,7 @@ SVG Icons - svgicons.sparkk.fr
     stroke-width: 1;
 }
 
-  /* -----
+/* -----
 SVG Icons - svgicons.sparkk.fr
 ----- */
 
@@ -120,11 +119,13 @@ SVG Icons - svgicons.sparkk.fr
 main {
     display: flex;
     justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-left: 10%;
+    width: 80%;
 }
 
 .category {
-    height: 5000px;
-    width: 70%;
     margin-top: 51px;
     background-color: #ffc8c8;
 }
@@ -210,8 +211,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    height: 330px;
+    flex-wrap: wrap;
     background-color: #ffc8c8;
     /* border-bottom: 1px solid #000000; */
 }
@@ -221,8 +221,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    width: 300px;
+    min-height: 300px;
+    min-width: 300px;
     font-size: 0px;
     font-weight: bold;
     color: #000000;
@@ -231,6 +231,7 @@ main {
     border-radius: 250px;
     box-shadow: 3px 3px 3px 1px #000000;
     cursor: default;
+    margin: 10px;
 }
 
 .card:hover {
